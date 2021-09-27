@@ -1,6 +1,6 @@
-import React from 'react'
+import React. {Component} from 'react'
 
-class Dropdown extends React.Component {
+class Dropdown extends Component {
   state = {
       visible: false;
   }
@@ -22,8 +22,8 @@ class Dropdown extends React.Component {
     render() {
         return (
             <div className="Dropdown">
-                <button type="button" className="Dropdown__toggle" onClick={this.show}>
-                   
+                <button type="button" className="Dropdown__toggle" onClick={this.show} onMoueOver>
+                   {this.state.visible ? 'Скрыть' : "Показать "}
                 </button>
 
                 {/* <button className="Dropdown__toggle" onClick={this.hide}>
