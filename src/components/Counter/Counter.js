@@ -1,29 +1,29 @@
-class Counter extends React.Component {
-  static defaultProps {
-      initialValue: 0,
-  };
+// class Counter extends React.Component {
+//   static defaultProps {
+//       initialValue: 0,
+//   };
 
-  static propTypes {
-      //
-  };
+//   static propTypes {
+//       //
+//   };
 
-  state = {
-      value: this.props.initialValue
-  };
+//   state = {
+//       value: this.props.initialValue
+//   };
 
-  handleIncrement = () => {
-      this.setState(prevState => ({
-          value: prevState.value + 1,
-      }));
-  };
+//   handleIncrement = () => {
+//       this.setState(prevState => ({
+//           value: prevState.value + 1,
+//       }));
+//   };
 
-  handleDecrement = () => {
-      this.setState(prevState => ({
-          value: prevState.value - 1,
-      }))
-  };
+//   handleDecrement = () => {
+//       this.setState(prevState => ({
+//           value: prevState.value - 1,
+//       }))
+//   };
 
-  render() {}
-};
+//   render() {}
+// };
 
-export default Counter;
+// export default Counter;
