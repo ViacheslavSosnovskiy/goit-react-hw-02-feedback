@@ -1,17 +1,17 @@
-// import React from "react";
+import React from "react";
 
-// class Statistics extends React.Component {
-//   state = {
-//     good: 0,
-//     neutral: 0,
-//     bad: 0,
-//   };
+class Statistics extends React.Component {
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
 
-//   render() {
-//     return;
-//   }
-// }
+  render() {
+    return;
+  }
+}
 
-// // s=
+// s=
 
-// export default Statistics;
+export default Statistics;
