@@ -15,9 +15,15 @@ class App extends Component {
   // s=
 
   onLeaveFeedback = (e) => {
-    this.setState();
     const { name } = e.target;
-    console.log(name);
+    this.setState((prevState) => {
+      return {
+        [name]: prevState[name] + 1,
+      };
+    });
+
+    // const { name } = e.target;
+    // console.log(name);
   };
 
   countTotalFeedback = () => {};
@@ -25,15 +31,13 @@ class App extends Component {
   countPositiveFeedback = () => {};
 
   render() {
-    const { good, neutral, bad } = this.state;
     return (
       <div>
-        <Statistics />,
+        <Statistics />
         <FeedbackOptions
-          options={(good, neutral, bad)}
+          options={["good", "neutral", "bad"]}
           onLeaveFeedback={this.onLeaveFeedback}
         />
-        ,
         <Notification message="No feedback given" />
         <Section />
       </div>
