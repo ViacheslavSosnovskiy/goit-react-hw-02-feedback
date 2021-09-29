@@ -1,17 +1,13 @@
-import React from "react";
-
-class Statistics extends React.Component {
-  state = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
-  };
-
-  render() {
-    return;
-  }
-}
-
-// s=
+const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
+  return (
+    <div>
+      <p>Good: {good}</p>
+      <p>Neutral: {neutral}</p>
+      <p>Bad: {bad}</p>
+      <p>Total: {total}</p>
+      <p>positiveFeedback: {positiveFeedback}</p>
+    </div>
+  );
+};
 
 export default Statistics;
