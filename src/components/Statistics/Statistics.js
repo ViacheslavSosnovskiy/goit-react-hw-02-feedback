@@ -1,3 +1,5 @@
+// import s from "./statistics.css";
+
 const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
   return (
     <div>

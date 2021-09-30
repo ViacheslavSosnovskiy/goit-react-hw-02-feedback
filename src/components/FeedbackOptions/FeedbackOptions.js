@@ -9,14 +9,13 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
             key={option}
             name={option}
             type="button"
-            // className={}
+            className={s.button}
             onClick={onLeaveFeedback}
           >
             {option}
           </button>
         );
       })}
-      ;
     </div>
   );
 };
