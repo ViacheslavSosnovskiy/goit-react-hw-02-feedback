@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import s from "./app.module.css";
 
 import Statistics from "./Statistics";
 import Notification from "./Notification";
@@ -29,7 +30,7 @@ class App extends Component {
 
   countPositiveFeedbackPercentage = () => {
     if (this.countTotalFeedback()) {
-      return (this.state.good / this.countTotalFeedback()) * 100;
+      return ((this.state.good / this.countTotalFeedback()) * 100).toFixed();
     } else return 0;
   };
 
@@ -37,7 +38,7 @@ class App extends Component {
     const { good, bad, neutral } = this.state;
 
     return (
-      <div>
+      <div className={s.feedbacksCounter}>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={["good", "neutral", "bad"]}

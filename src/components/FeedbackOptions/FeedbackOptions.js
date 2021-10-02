@@ -1,4 +1,4 @@
-import s from "./feedbackOptions.css";
+import "./feedbackOptions.module.css";
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
@@ -9,7 +9,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
             key={option}
             name={option}
             type="button"
-            className={s.button}
+            className={option}
             onClick={onLeaveFeedback}
           >
             {option}
