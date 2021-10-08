@@ -13,12 +13,12 @@ class App extends Component {
     bad: 0,
   };
 
-  onLeaveFeedback = (e) => {
-    const { name } = e.target;
+  onLeaveFeedback = (option) => {
+    console.log(option);
 
     this.setState((prevState) => {
       return {
-        [name]: prevState[name] + 1,
+        [option]: prevState[option] + 1,
       };
     });
   };
